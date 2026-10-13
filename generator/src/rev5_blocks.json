@@ -1,0 +1,3978 @@
+[
+{
+"t": "h1",
+"runs": [
+[
+"Revisable Systems Practice — Revision 5",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"2026-10-10 · @Josiah",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"A practice for studying and governing systems that mix people, institutions, machines and habitats, while keeping its own models, goals and rules open to challenge. Its commitments are care, non-domination and the conditions of flourishing. Revision 5 restores five distinctive claims as propositions that can fail, and shows the practice applied, including where it added nothing.",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"What changed from Revision 4",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Revision 5 keeps Revision 4's narrowed commitments and puts back what made the practice distinct, as claims that can fail.",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Five distinctive claims return (§4):",
+"b"
+],
+[
+" decay ownership, temporal legibility, identity–lesson separation, directional corrigibility with a proposed measure, and displacement as a coded variable. Each states what would count against it.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Scope is declared before testing (§1):",
+"b"
+],
+[
+" where the practice should add nothing, and where it should add most.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Three worked examples replace most citations (§§8–10):",
+"b"
+],
+[
+" a hypothetical outage, a real test run with a null result, and an analogy followed until it stopped being useful.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"\"Test the successor first\" gains an extremis clause (§2):",
+"b"
+],
+[
+" where shocks outrun a staged switch, the successor must exist before it is needed.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Citations move out of the text.",
+"b"
+],
+[
+" A short list of debts gives the map, and full references close the document.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h2",
+"runs": [
+[
+"1 Purpose, scope and starting points",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"The practice asks one question of any system: can it still discover that it is wrong, and act on that, as its power grows? It applies to systems that combine people, institutions, technologies and habitats. It is a set of questions and proposals, not a discipline or a decision engine.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Scope, declared before testing.",
+"b"
+],
+[
+" A practice that explains away every null result cannot be tested, so the expected results come first.",
+""
+]
+]
+},
+{
+"t": "table",
+"rows": [
+{
+"header": false,
+"cells": [
+[
+[
+"Setting",
+""
+]
+],
+[
+[
+"Expected contribution",
+""
+]
+],
+[
+[
+"Why",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"Mature network and hosting reliability reviews",
+""
+]
+],
+[
+[
+"Little or none beyond a competent review",
+""
+]
+],
+[
+[
+"Established practice already covers dependencies, recovery testing and blameless reporting",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"Agentic AI systems",
+""
+]
+],
+[
+[
+"Supported findings a generic checklist misses",
+""
+]
+],
+[
+[
+"Fast deployment, few upstream owners, gameable measures, affected third parties with no say",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"Leaderless or adversarial coordination",
+""
+]
+],
+[
+[
+"Supported findings a generic checklist misses",
+""
+]
+],
+[
+[
+"Visibility, timing and record-keeping carry risks that ordinary reviews ignore",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"Institutions whose corrective authority is itself implicated",
+""
+]
+],
+[
+[
+"Diagnosis only",
+""
+]
+],
+[
+[
+"The remedies assume someone accountable can act (§12)",
+""
+]
+]
+]
+}
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"A null result in the first row is a passed prediction. A null result in the second or third row counts against the practice.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Starting points.",
+"b"
+],
+[
+" Four are descriptive claims:",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"P1.",
+"b"
+],
+[
+" Accounts of complex systems are situated and incomplete.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"P2.",
+"b"
+],
+[
+" Updating inside a model does not show that the model is adequate.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"P3.",
+"b"
+],
+[
+" Representations can change what they represent.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"P4.",
+"b"
+],
+[
+" Lives depend on material, social and ecological conditions, some of them hard to rebuild.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"Four are adopted commitments, not findings:",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"P5.",
+"b"
+],
+[
+" Moral consideration follows welfare, with precaution where sentience is credibly uncertain.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"P6.",
+"b"
+],
+[
+" Care is not earned by contribution. Arbitrary power and permanent outgroups are opposed.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"P7.",
+"b"
+],
+[
+" Flourishing is plural; no single quantity is maximized.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"P8.",
+"b"
+],
+[
+" Greater consequential power should not erode the capacity to discover and act on inadequacy.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"One is a procedural wager:",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"P9.",
+"b"
+],
+[
+" Use accountable review, staged change and tested successors rather than an unrevisable final judge. This manages fallibility; it does not prove the procedure right.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h2",
+"runs": [
+[
+"2 The core practice",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Three questions organize the work, three rules govern change, and every measure is checked for feedback.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Three questions.",
+"b"
+],
+[
+" They overlap with double-loop learning and are practical distinctions, not levels of mind.",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Inference:",
+"b"
+],
+[
+" what follows inside the present model?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Criticism:",
+"b"
+],
+[
+" does the model or strategy fit the problem?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Constitution:",
+"b"
+],
+[
+" are the goals, categories, standards or participants themselves wrong?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"Regulation and revision.",
+"b"
+],
+[
+" Holding an agreed condition and revising the purpose need different procedures and different speeds. Declare the regulated variable, its bounds, who benefits, who bears its costs and who can change it. A technically effective regulator can enforce an objectionable goal.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Change.",
+"b"
+],
+[
+" Anyone may explore alternatives. Replacing an operating rule needs a stated inadequacy: an anomaly, an exclusion, a contradiction, a near miss, or a credible foreseeable failure.",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Add before you remove.",
+"b"
+],
+[
+" Prefer changes that add a usable option. Check later whether the option became compulsory through network effects, withdrawn services or cost.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Test the successor first.",
+"b"
+],
+[
+" Test it at a fitting scale, record what would count as its failure, and keep the old rule's protective functions. Stage changes; declare coupled changes as one revision.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Extremis clause.",
+"b"
+],
+[
+" Where shocks can arrive faster than a staged switch, the successor must be prepared and rehearsed before it is needed. That readiness has a standing cost, and the cost belongs in the decision. Emergency measures carry fixed expiry, independent renewal and review afterwards.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"Reflexivity.",
+"b"
+],
+[
+" A ranking, benchmark, forecast or diagnosis can change the behavior it measures. Tag each deployed measure R0 (negligible feedback), R1 (bounded or slow) or R2 (consequential), with reasons. For each, ask who uses it, what decisions follow, what behavior changes and what becomes invisible.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Ask also when it is taken. A measure on a known schedule invites preparation for the schedule rather than for the outcome (§4, D2).",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"3 Four audits",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Each audit is a question to put to a system. None yields a verdict by itself.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Speed of correction.",
+"b"
+],
+[
+" How long does a problem take to reach someone able to act, and how long from there to action? Elections correct on a cycle of years; deployments change in weeks. Protected, non-punitive reporting adds a continuous channel between those bursts, but a channel needs a durable store or its signals fade before anyone acts.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Captured options: the bypass test.",
+"b"
+],
+[
+" For identity, discovery, validation, coordination and appeal, find the controlling centres. Ask whether a person can secure correction without their discretionary cooperation. The alternative must resist the specific capture or failure being examined; another interface over the same owner is not a route.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Two further questions belong here:",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Does the centre expire?",
+"b"
+],
+[
+" Authority that ends on schedule is a route around it through time. Seasonal offices, term limits and sunset clauses are examples.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Who controls decay?",
+"b"
+],
+[
+" Whoever sets how long signals persist controls what can be reconstructed later (D1).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"Interests without votes.",
+"b"
+],
+[
+" Who is affected without being involved? Animals, children, future people, dormant members and people who cannot safely be visible are the usual cases. For those unable to represent themselves, use plural, contestable, term-limited trustees, giving way to direct participation where possible. Choosing trustees already selects interests.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Gamed measures.",
+"b"
+],
+[
+" Mark measures whose use changes what they measure, and do not treat a gamed number's success as proof. Look for displaced costs, reclassification and strategic timing.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Before any audit: who receives the report?",
+"b"
+],
+[
+" The remedies assume an accountable recipient. Where the corrective authority is itself the hazard, the audits still diagnose, but the practice has no one to report to (§12).",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"4 Five distinctive claims",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"These are the practice's own proposals. Each borrows from an established literature, adds something that literature does not state, and can fail independently of the others. D3 and D5 rest on single examples so far, and D4's measure is untested.",
+""
+]
+]
+},
+{
+"t": "h3",
+"runs": [
+[
+"D1 Decay ownership",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Claim.",
+"b"
+],
+[
+" Whoever controls how long a signal persists controls whether a coordinating network can be mapped after the fact. Coordination through public signs is only as safe as participants' control over decay, or the control of a third party bound to published rules.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Beyond its antecedents.",
+"b"
+],
+[
+" Research on stigmergy treats evaporation as a property of the medium. On digital platforms, evaporation is a retention policy set by an owner, and signals that fade for participants can persist for someone else.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Counts against it.",
+"b"
+],
+[
+" Networks whose signals are retained by third parties prove no easier to reconstruct or disrupt than comparable networks whose signals actually expire.",
+""
+]
+]
+},
+{
+"t": "h3",
+"runs": [
+[
+"D2 Temporal legibility",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Claim.",
+"b"
+],
+[
+" A public schedule lowers coordination costs for members and raises exposure to anyone else who can read it. Predictable timing gets gamed by the measured and exploited by adversaries.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Evidence so far.",
+"b"
+],
+[
+" US nursing homes slack after an inspection and ramp up before the next. In 2003 about a third of their inspections were predictable in timing, partly because of the maximum-interval rule itself. Ransomware groups have timed major attacks to holiday weekends.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Beyond its antecedents.",
+"b"
+],
+[
+" Focal points and Goodhart's law are usually treated separately. D2 treats a clock as both a coordination resource and an attack surface, and asks how much of a network's timing should be public.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Counts against it.",
+"b"
+],
+[
+" Moving to unpredictable timing yields no gain in measured performance or in exposure, after controlling for frequency.",
+""
+]
+]
+},
+{
+"t": "h3",
+"runs": [
+[
+"D3 Identity–lesson separation",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Claim.",
+"b"
+],
+[
+" Where being identifiable is penalized, systems that keep learning separate who reported from what was learned. Identity decays on a rule; the lesson persists. Systems that cannot separate the two lose reports or lose reporters.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Example.",
+"b"
+],
+[
+" NASA's aviation safety reporting system returns the identifying strip to the reporter, keeps no copy and stores de-identified reports. In its first quarter, over 99% of reporters identified themselves, though a penalty waiver also rewarded doing so.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Counts against it.",
+"b"
+],
+[
+" Systems that penalize identifiable reports learn just as well without separation, or separation shows no gain once incentives are controlled.",
+""
+]
+]
+},
+{
+"t": "h3",
+"runs": [
+[
+"D4 Directional corrigibility, measured",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Claim.",
+"b"
+],
+[
+" A warning sign: consequential power rising while the capacity to discover and act on inadequacy falls.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Measure (proposed).",
+"b"
+],
+[
+" Track two series over time. Power: deployment scope, market share, or the number of people who depend on the system. Correction: the time from a substantiated report to action by someone authorized, the share of substantiated reports that reach such a person, and the number of independent routes to contest a decision.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Counts against it.",
+"b"
+],
+[
+" Diverging series predict nothing about later serious failures, compared with systems whose correction capacity keeps pace with their power.",
+""
+]
+]
+},
+{
+"t": "h3",
+"runs": [
+[
+"D5 Displacement, coded",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Claim.",
+"b"
+],
+[
+" After disruption, systems that preserve the capacity to reorganize recover better than systems that restore a prior configuration, when hazards change faster than the configuration can.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Measure.",
+"b"
+],
+[
+" Code each recovery as a displacement vector across mission, structure, membership, capabilities and accountability, each scored from unchanged to replaced. Regulation (return to set point) and revision (return displaced) are the ends of each axis, not a binary label.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Counts against it.",
+"b"
+],
+[
+" Displacement predicts nothing about later function, or the coding fails to separate cases because nearly every human recovery involves some change.",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"5 Power, care and representation",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Non-domination concerns exposure to uncontrolled interference, even when power is exercised kindly. Material dependence can enable domination but does not prove it. Ask who controls interference, whose interests count and what contestation is actually available.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Enforcement.",
+"b"
+],
+[
+" Disapproval does not correct an actor that others depend on. Specify who must respond, what they can be required to do, how refusal is handled and who reviews the reviewer. Consequences can remove obstructive authority without using destitution as the sanction.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Visibility read as command.",
+"b"
+],
+[
+" Where people coordinate without designated leaders, outsiders measure visibility and read it as authority. The press, funders and investigators then appoint the centre the network refused to have, and the hazard falls on the most visible people. Jo Freeman described this in 1970; it remains a design problem for any leaderless effort, and a reason D1 matters.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Care.",
+"b"
+],
+[
+" Care and non-domination are adopted values. Dependency does not logically create the obligation; the commitment does. The traditions the practice draws on disagree with each other, and their disagreements stay relevant.",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"6 Irreversibility, habitats and artificial systems",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Before irreversible destruction of something that sustains lives, compare feasible alternatives and the costs of inaction, and document the search. Three dials organize the burden:",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Irreplaceability:",
+"b"
+],
+[
+" can the lost capacities be rebuilt in time?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Imposition:",
+"b"
+],
+[
+" who bears the loss, and can they contest it?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Substitutivity:",
+"b"
+],
+[
+" does an effective option disappear?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"The dials share no unit and compute no verdict. Learning through trials also improves safety; precaution and experimentation both need their consequences assessed.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"The strongest objection to this practice lives here.",
+"b"
+],
+[
+" If one failure is unrecoverable, testing the successor first assumes a second attempt that may not come. The practice answers with the irreversibility burden rather than by dismissing the objection, so the disagreement moves to estimates of probability and irreversibility, where it can be examined.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Habitats.",
+"b"
+],
+[
+" Protect a forest through the lives and capacities that depend on it, without declaring the forest a subject. If artificial systems come to bear interests, their compute, energy and cooling compete with biological niches, and equal consideration supplies no rule for allocating between them.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Artificial systems.",
+"b"
+],
+[
+" A highly competent optimizer can be dangerous without revising its ends, and the practice offers no solution to alignment. It adds institutional questions: where the bottlenecks are, whether capability gains are weakening correction (D4), and whether safety measures are themselves being gamed. Technical corrigibility and institutional corrigibility are assessed separately.",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"7 Ten constraints",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"These bound every application of the practice, including applications to itself.",
+""
+]
+]
+},
+{
+"t": "oli",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"No subsystem speaks as Reason as a whole.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Standing follows interests, not usefulness.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Consent alone does not establish freedom from domination.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Claims of domination remain answerable to counterevidence, including the testimony of those said to be dominated.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Emancipation permits no permanent or hereditary outgroup.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Material dependence is investigated for uncontrolled power.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Collective obligation grants no unrestricted jurisdiction.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 8,
+"depth": 0,
+"runs": [
+[
+"Uncertain standing does not load all error onto those possibly excluded.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 9,
+"depth": 0,
+"runs": [
+[
+"Irreversible destruction carries a proportionate burden of evidence.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "oli",
+"n": 10,
+"depth": 0,
+"runs": [
+[
+"Critical decisions require effective, affordable contestation that survives the refusal or capture of the relevant gatekeeper.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"Constraint 10 asks whether contestation actually works against the specific capture in question, not whether every dependency is duplicated. Declare shared risks and test actual correction.",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"8 Worked example A: an outage delayed by authority",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"A hypothetical network operations incident, not an account of any employer. A fiber cut causes an outage. Repair waits because the escalation matrix routes approval through non-technical executives, two of whom are in conflict.",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Inference:",
+"b"
+],
+[
+" locate the break, verify alarms, arrange access, estimate repair time.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Criticism:",
+"b"
+],
+[
+" rebuild the timeline. When was the diagnosis available, which authorization was missing, and what evidence supports the claim of obstruction?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Constitution:",
+"b"
+],
+[
+" why does rank rather than technical competence control dispatch, and who can change that rule?",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"Audits.",
+"b"
+],
+[
+" Map customers, field crews, carrier partners, technicians and executives, keeping responsibility, expertise and control separate. A technician who cannot safely challenge a manager is part of the model, not a personality defect. \"Fast escalation\" as a measure can reward notifying executives while repairs wait.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Measure.",
+"b"
+],
+[
+" Split diagnosis-to-dispatch from dispatch-to-restoration. The first is organizational delay; the second is mostly physical repair. This split is the most directly testable idea in the practice, and regulator investigations of outages often carry timelines detailed enough to apply it.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Proposal.",
+"b"
+],
+[
+" Trial standing technical dispatch authority under specified conditions, keeping executive notification, a shared record and independent review. Compare restoration delays and mistaken dispatches by severity. Name who must act on a substantiated obstruction, and with what appeal; popularity, shame and bonuses do not substitute for authority over people and resources.",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"9 Worked example B: a test that found nothing distinctive",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"In October 2026 the practice, in its Revision 3 form, was applied to six public postmortems: AWS S3 (2017), GitLab (2017), Cloudflare (2019 and 2023), GitHub (2018) and Facebook (2021). Each case got a competent site-reliability reading and a reading through the practice.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Result.",
+"b"
+],
+[
+" The two readings found substantially the same mechanisms, and no finding unique to the practice emerged. On the variables that would distinguish it (retaliation against reporters, ownership of bottlenecks, incentives to game measures), all six reports were silent.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Why, by the practice's own audits.",
+"b"
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"The corpus selects against the claims.",
+"b"
+],
+[
+" A company's postmortem says what its publisher can afford to say. Governance causes appear where someone outside can compel them: regulator investigations, inquiries and litigation.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"The cases were famous.",
+"b"
+],
+[
+" Both readings drew on lessons already absorbed from these outages, so they converged.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"One analyst wrote both readings with outcomes visible.",
+"b"
+],
+[
+" That makes the run a feasibility check, not evidence.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"What the practice concludes.",
+"b"
+],
+[
+" The null result fits the declared scope (§1): a mature reliability review should leave little to add. It does not test the distinctive claims, which this corpus could not reach. The next run changes both the unit of analysis and the comparison:",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Study the dependents of single-owner failures, such as a widely deployed security update or a cloud region outage, to test the bypass audit and D1.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Use regulator investigations of outages, which have an accountable recipient and named corrective orders.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Use cases from after the reviewing model's training, or from organizations nobody writes about.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Compare three arms: a competent review, the review plus the practice, and the review plus a generic checklist of equal length. Without the third arm, any gain may only come from asking more questions.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h2",
+"runs": [
+[
+"10 Worked example C: an analogy taken to its limit",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"The practice was also run on an unusual chain of comparisons: a mathematics preprint, slime molds and social movements. The example shows how analogy is used here and where it stops.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"The chain.",
+"b"
+],
+[
+" A preprint on computation in forced fluids describes two clocks. One slows continuously but still reaches every step; the other freezes between brief bursts while old signals fade below detection.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Slime molds and microbes show both patterns: steady activity in buffered refuges such as snow-covered soil, and dormancy between brief favorable windows. Social movements show both too: small organizations that keep networks and skills alive between upsurges, and shared rhythms that let dormant members resynchronize without sending messages.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"What the practice did with it.",
+"b"
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Decided what it could audit.",
+"b"
+],
+[
+" The fluid and the organisms have no owners, no standing and no measures that react to being measured, so only the human layer could be audited.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Let the analogy prompt claims, not support them.",
+"b"
+],
+[
+" The comparison suggested a two-layer design for coordination: public signals allowed to fade, durable capacity kept unmapped. Auditing that suggestion produced D1 (who controls the fading?) and D2 (who else reads the clock?).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Accepted correction.",
+"b"
+],
+[
+" A cross-review objected that the fluid \"exactly\" implements the two-layer split. The word overstated a partial parallel and was dropped.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "p",
+"runs": [
+[
+"What it cannot do.",
+"b"
+],
+[
+" The biology validates no institutional claim. One pattern from the slime-mold literature is tentative: collective forms appear up to moderate extremes, while the harshest settings hold only solitary cells. If something similar held for people, legible coordination would depend on refuges where being visible is survivable. That is a question for evidence about people, not slime molds (§12).",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"The rule for sketches applies to analogies too: a sketch or an analogy prompts a claim and never replaces one (§13).",
+""
+]
+]
+},
+{
+"t": "h2",
+"runs": [
+[
+"11 Testing program",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Each claim gets a setting where it could fail, a measure, and a result that would count against it.",
+""
+]
+]
+},
+{
+"t": "table",
+"rows": [
+{
+"header": false,
+"cells": [
+[
+[
+"Claim",
+""
+]
+],
+[
+[
+"Where to test",
+""
+]
+],
+[
+[
+"Measure",
+""
+]
+],
+[
+[
+"Counts against it",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"Bypass audit and D1",
+""
+]
+],
+[
+[
+"Dependents of single-owner failures",
+""
+]
+],
+[
+[
+"Who had a working route that avoided the owner; restoration time by route",
+""
+]
+],
+[
+[
+"Dependents with and without routes recover alike",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"D2",
+""
+]
+],
+[
+[
+"Inspection regimes; incident timing",
+""
+]
+],
+[
+[
+"Performance near scheduled dates against other dates; incidents by staffing period",
+""
+]
+],
+[
+[
+"No difference after controlling for frequency",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"D3",
+""
+]
+],
+[
+[
+"Reporting systems with and without protection",
+""
+]
+],
+[
+[
+"Report volume, reuse of lessons, repeat failures",
+""
+]
+],
+[
+[
+"Separation shows no learning gain once incentives are controlled",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"D4",
+""
+]
+],
+[
+[
+"Agentic platforms and their providers over time",
+""
+]
+],
+[
+[
+"Power series against report-to-action time, share of reports reaching authority, routes to contest",
+""
+]
+],
+[
+[
+"Divergence predicts nothing about later serious failures",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"D5",
+""
+]
+],
+[
+[
+"Historical closures and revivals of organizations",
+""
+]
+],
+[
+[
+"Displacement vector against later function",
+""
+]
+],
+[
+[
+"No predictive value, or coding fails to separate cases",
+""
+]
+]
+]
+},
+{
+"header": false,
+"cells": [
+[
+[
+"The practice as a whole",
+""
+]
+],
+[
+[
+"Three-arm review of unseen cases",
+""
+]
+],
+[
+[
+"Specific, supported, actionable findings, scored by blind judges",
+""
+]
+],
+[
+[
+"The practice adds nothing over an equal-length checklist, or adds more unsupported claims",
+""
+]
+]
+]
+}
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Rules for every test.",
+"b"
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Define recovery before looking: restored service, restored capability, retained autonomy, or capacity for further revision. They are not interchangeable.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Unknown is not absent. A report's silence about retaliation is not evidence that none occurred.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Use historical, aggregate or consented material for political cases. Never produce person-level or site-level maps of living networks.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Tag provenance: inspected evidence, secondary synthesis, or model-generated hypothesis.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Set the smallest useful gain and the acceptable error burden before running a confirmatory comparison.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h2",
+"runs": [
+[
+"12 Open questions, left open",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"None of these is resolved here, and nothing in the practice requires them to be.",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"No accountable recipient.",
+"b"
+],
+[
+" Where the corrective authority is itself the hazard, the audits diagnose but the remedies have nowhere to go. Federalism, courts and a free press are routes around any one centre; where none exists, the practice has nothing to maintain.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Representatives in networks built without them.",
+"b"
+],
+[
+" The patch for interests without votes is trustees, and leaderless coordination refuses designated roles. How such a network gives standing to people who cannot afford to be visible, without creating the centre it avoids, is unanswered.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"The refuge dependency.",
+"b"
+],
+[
+" Legible coordination may depend on the institutions this practice maintains. One acts inside the refuge; the other keeps it standing.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Records versus fading.",
+"b"
+],
+[
+" Fading protects people; records let systems learn. Identity–lesson separation (D3) is a partial answer, not a resolution.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Single-owner infrastructure.",
+"b"
+],
+[
+" When a critical function already has one owner, the practice does not say whether public ownership, a public option alongside private ones, or polycentric replacement is better. The bypass test applies to a public owner as much as a private one.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Who judges preservation.",
+"b"
+],
+[
+" Someone decides whether a successor kept the old rule's protective functions. The regress is managed by exposing it, not ended.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Enforcement, allocation and cross-scale coordination,",
+"b"
+],
+[
+" as in Revision 4: how to enforce without arbitrary power, how to allocate under incompatible claims, and how decisions at one scale or timescale bind another.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h2",
+"runs": [
+[
+"13 The mark and an orientation",
+""
+]
+]
+},
+{
+"t": "embed",
+"caption": "the open, branching spiral"
+},
+{
+"t": "p",
+"runs": [
+[
+"A loose curl with no central dot, turning outward with space between turns, its outer end left open, and a short branch curving away into its own open end. It suggests returning to a question from a changed position, with room to diverge or stop. Rotation and proportion carry no doctrine; Le Guin's Kesh suggested the orientation, and this is not a Kesh glyph.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Sketching.",
+"b"
+],
+[
+" Any sketch made with the practice follows one rule: a sketch prompts a claim and never replaces one. Revision 3's twelve sketching marks remain available, provided each mark's meaning is stated every time it is used.",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Orientation.",
+"b"
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Keep models contestable.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Make purposes and exclusions visible.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Protect reporting and the capacity to act on it.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Know who controls what fades, and who else can read the clock.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Count the costs of action and of inaction.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Keep care independent of earned worth.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Let the practice itself be revised or abandoned. No one needs permission to stop using it, and no service may depend on adherence.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h2",
+"runs": [
+[
+"Debts",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"What was borrowed, from whom, in short form. Full references follow.",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Experimentalist governance:",
+"b"
+],
+[
+" Dorf and Sabel (1998); Sabel and Zeitlin (2012). Provisional goals, local trials, comparison and review.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Boundary critique:",
+"b"
+],
+[
+" Ulrich (1983); Ulrich and Reynolds (2010). Who is affected without being involved.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Non-domination and correction of entrenched failure:",
+"b"
+],
+[
+" Pettit (1997); Sabel and Simon (2004).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Commons and polycentricity:",
+"b"
+],
+[
+" Ostrom (1990).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Distributed cognition and organizational learning:",
+"b"
+],
+[
+" Hutchins (1995); Argyris and Schön (1978).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Measures that change what they measure:",
+"b"
+],
+[
+" Campbell (1979); Hacking (1995); MacKenzie (2006); Perdomo and colleagues (2020).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Regulation and resilience:",
+"b"
+],
+[
+" Ashby (1956); Holling (1973); Folke and colleagues (2005).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 8,
+"depth": 0,
+"runs": [
+[
+"Precaution and trials:",
+"b"
+],
+[
+" Jonas (1984); Wildavsky (1988). ",
+""
+],
+[
+"Sentience and capabilities:",
+"b"
+],
+[
+" Birch (2024); Nussbaum (2006). ",
+""
+],
+[
+"Dependency:",
+"b"
+],
+[
+" Kittay (1999).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 9,
+"depth": 0,
+"runs": [
+[
+"Structurelessness and \"stars\":",
+"b"
+],
+[
+" Freeman (1972–73). ",
+""
+],
+[
+"Focal points:",
+"b"
+],
+[
+" Schelling (1960). ",
+""
+],
+[
+"Stigmergy and legible goals:",
+"b"
+],
+[
+" Marsh (2013).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 10,
+"depth": 0,
+"runs": [
+[
+"Movement continuity:",
+"b"
+],
+[
+" Taylor (1989) on abeyance; Morris (1984) on halfway houses.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 11,
+"depth": 0,
+"runs": [
+[
+"Evidence used in §§4 and 9:",
+"b"
+],
+[
+" GAO-03-561 (2003) on predictable nursing-home inspections; Gandhi, Olenski and Shi, NBER Working Paper 34491 (2025) on inspection timing; FBI and CISA advisory AA21-243A (2021) on holiday ransomware; NASA ASRS quarterly report 76-1 (1976) and FAA Advisory Circular 00-46F on report handling; six public operator postmortems, 2017–2023.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 12,
+"depth": 0,
+"runs": [
+[
+"Philosophy of revision:",
+"b"
+],
+[
+" Negarestani (2018); Neurath (1932/33). ",
+""
+],
+[
+"The mark:",
+"b"
+],
+[
+" Le Guin (1985).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h2",
+"runs": [
+[
+"References",
+""
+]
+]
+},
+{
+"t": "p",
+"runs": [
+[
+"Grouped by use. Working documents are unpublished. Entries carried over from Revision 4 support passages retained here; general acknowledgments claim no particular passage or agreement.",
+""
+]
+]
+},
+{
+"t": "h3",
+"runs": [
+[
+"Versions and working documents",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Systematology: A revisable systems practice",
+"i"
+],
+[
+", Revision 3. October 2026, 24 pp. Unpublished.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Revisable Systems Practice",
+"i"
+],
+[
+", Revision 4. October 2026, 13 pp. Unpublished.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Claude (2026). ",
+""
+],
+[
+"Extremophile slime molds and their analogues.",
+"i"
+],
+[
+" Research summary, 10 October 2026.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Claude (2026). ",
+""
+],
+[
+"Slow clocks, dormancy, and organization under extremis.",
+"i"
+],
+[
+" Comparative note, 10 October 2026.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"ChatGPT (2026). ",
+""
+],
+[
+"Cross-review: Slow clocks, dormancy, and organization under extremis.",
+"i"
+],
+[
+" 10 October 2026.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Claude (2026). ",
+""
+],
+[
+"Systematology applied to slow clocks and dormancy.",
+"i"
+],
+[
+" Application note, 10 October 2026.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"ChatGPT (2026). ",
+""
+],
+[
+"Slow clocks, dormancy, and revisable institutions.",
+"i"
+],
+[
+" Working research packet, 10 October 2026.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 8,
+"depth": 0,
+"runs": [
+[
+"Systematology against public incident reports: incident pilot 0.1.",
+"i"
+],
+[
+" Retrospective development report, 10 October 2026.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h3",
+"runs": [
+[
+"Procedural and analytical antecedents",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Argyris, C., & Schön, D. A. (1978). ",
+""
+],
+[
+"Organizational Learning: A Theory of Action Perspective.",
+"i"
+],
+[
+" Addison-Wesley.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Ashby, W. R. (1956). ",
+""
+],
+[
+"An Introduction to Cybernetics.",
+"i"
+],
+[
+" Chapman & Hall.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Dorf, M. C., & Sabel, C. F. (1998). A constitution of democratic experimentalism. ",
+""
+],
+[
+"Columbia Law Review",
+"i"
+],
+[
+", 98, 267–473.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Folke, C., Hahn, T., Olsson, P., & Norberg, J. (2005). Adaptive governance of social-ecological systems. ",
+""
+],
+[
+"Annual Review of Environment and Resources",
+"i"
+],
+[
+", 30, 441–473. https://doi.org/10.1146/annurev.energy.30.050504.144511",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Gelman, A., & Shalizi, C. R. (2013). Philosophy and the practice of Bayesian statistics. ",
+""
+],
+[
+"British Journal of Mathematical and Statistical Psychology",
+"i"
+],
+[
+", 66(1), 8–38.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Heilmann, S. (2008). Policy experimentation in China's economic rise. ",
+""
+],
+[
+"Studies in Comparative International Development",
+"i"
+],
+[
+", 43, 1–26.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Holling, C. S. (1973). Resilience and stability of ecological systems. ",
+""
+],
+[
+"Annual Review of Ecology and Systematics",
+"i"
+],
+[
+", 4, 1–23. https://doi.org/10.1146/annurev.es.04.110173.000245",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 8,
+"depth": 0,
+"runs": [
+[
+"Hutchins, E. (1995). ",
+""
+],
+[
+"Cognition in the Wild.",
+"i"
+],
+[
+" MIT Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 9,
+"depth": 0,
+"runs": [
+[
+"Lindblom, C. E. (1959). The science of \"muddling through.\" ",
+""
+],
+[
+"Public Administration Review",
+"i"
+],
+[
+", 19(2), 79–88.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 10,
+"depth": 0,
+"runs": [
+[
+"Midgley, G. (2000). ",
+""
+],
+[
+"Systemic Intervention: Philosophy, Methodology, and Practice.",
+"i"
+],
+[
+" Kluwer Academic.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 11,
+"depth": 0,
+"runs": [
+[
+"Ostrom, E. (1990). ",
+""
+],
+[
+"Governing the Commons: The Evolution of Institutions for Collective Action.",
+"i"
+],
+[
+" Cambridge University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 12,
+"depth": 0,
+"runs": [
+[
+"Ostrom, V., Tiebout, C. M., & Warren, R. (1961). The organization of government in metropolitan areas. ",
+""
+],
+[
+"American Political Science Review",
+"i"
+],
+[
+", 55(4), 831–842.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 13,
+"depth": 0,
+"runs": [
+[
+"Sabel, C. F., & Simon, W. H. (2004). Destabilization rights: How public law litigation succeeds. ",
+""
+],
+[
+"Harvard Law Review",
+"i"
+],
+[
+", 117, 1015–1101. https://scholarship.law.columbia.edu/faculty_scholarship/737/",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 14,
+"depth": 0,
+"runs": [
+[
+"Sabel, C. F., & Zeitlin, J. (2012). Experimentalist governance. In D. Levi-Faur (Ed.), ",
+""
+],
+[
+"The Oxford Handbook of Governance.",
+"i"
+],
+[
+" Oxford University Press. https://doi.org/10.1093/oxfordhb/9780199560530.013.0012",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 15,
+"depth": 0,
+"runs": [
+[
+"Ulrich, W. (1983). ",
+""
+],
+[
+"Critical Heuristics of Social Planning: A New Approach to Practical Philosophy.",
+"i"
+],
+[
+" Haupt.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 16,
+"depth": 0,
+"runs": [
+[
+"Ulrich, W., & Reynolds, M. (2010). Critical systems heuristics. In M. Reynolds & S. Holwell (Eds.), ",
+""
+],
+[
+"Systems Approaches to Managing Change",
+"i"
+],
+[
+" (pp. 243–292). Springer. https://www.wulrich.com/downloads/ulrich_reynolds_2010_prepub.pdf",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 17,
+"depth": 0,
+"runs": [
+[
+"Walker, B., Holling, C. S., Carpenter, S. R., & Kinzig, A. (2004). Resilience, adaptability and transformability in social–ecological systems. ",
+""
+],
+[
+"Ecology and Society",
+"i"
+],
+[
+", 9(2), 5. https://www.ecologyandsociety.org/vol9/iss2/art5/",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h3",
+"runs": [
+[
+"Measurement, reflexivity and timing",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Campbell, D. T. (1979). Assessing the impact of planned social change. ",
+""
+],
+[
+"Evaluation and Program Planning",
+"i"
+],
+[
+", 2(1), 67–90.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Dixit, A. K., & Pindyck, R. S. (1994). ",
+""
+],
+[
+"Investment under Uncertainty.",
+"i"
+],
+[
+" Princeton University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Goodhart, C. A. E. (1975). Problems of monetary management: The U.K. experience. ",
+""
+],
+[
+"Papers in Monetary Economics",
+"i"
+],
+[
+", Vol. 1. Reserve Bank of Australia.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Hacking, I. (1995). The looping effects of human kinds. In D. Sperber, D. Premack, & A. J. Premack (Eds.), ",
+""
+],
+[
+"Causal Cognition: A Multidisciplinary Debate.",
+"i"
+],
+[
+" Clarendon Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"MacKenzie, D. (2006). ",
+""
+],
+[
+"An Engine, Not a Camera: How Financial Models Shape Markets.",
+"i"
+],
+[
+" MIT Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Perdomo, J., Zrnic, T., Mendler-Dünner, C., & Hardt, M. (2020). Performative prediction. ",
+""
+],
+[
+"Proceedings of Machine Learning Research",
+"i"
+],
+[
+", 119, 7599–7609. https://proceedings.mlr.press/v119/perdomo20a.html",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Schelling, T. C. (1960). ",
+""
+],
+[
+"The Strategy of Conflict.",
+"i"
+],
+[
+" Harvard University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 8,
+"depth": 0,
+"runs": [
+[
+"Wildavsky, A. (1988). ",
+""
+],
+[
+"Searching for Safety.",
+"i"
+],
+[
+" Transaction Books.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h3",
+"runs": [
+[
+"Coordination, movements and organization",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Dorigo, M., & Stützle, T. (2004). ",
+""
+],
+[
+"Ant Colony Optimization.",
+"i"
+],
+[
+" MIT Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Freeman, J. (1972–73). The tyranny of structurelessness. ",
+""
+],
+[
+"Berkeley Journal of Sociology",
+"i"
+],
+[
+", 17, 151–165. https://www.jofreeman.com/joreen/tyranny.htm",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Hirschman, A. O. (1970). ",
+""
+],
+[
+"Exit, Voice, and Loyalty.",
+"i"
+],
+[
+" Harvard University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Marsh, H. (2013). ",
+""
+],
+[
+"Binding Chaos.",
+"i"
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Morris, A. D. (1984). ",
+""
+],
+[
+"The Origins of the Civil Rights Movement: Black Communities Organizing for Change.",
+"i"
+],
+[
+" Free Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Taylor, V. (1989). Social movement continuity: The women's movement in abeyance. ",
+""
+],
+[
+"American Sociological Review",
+"i"
+],
+[
+", 54(5), 761–775.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Theraulaz, G., & Bonabeau, E. (1999). A brief history of stigmergy. ",
+""
+],
+[
+"Artificial Life",
+"i"
+],
+[
+", 5(2), 97–116.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h3",
+"runs": [
+[
+"Ethics, philosophy and creative resources",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Birch, J. (2024). ",
+""
+],
+[
+"The Edge of Sentience: Risk and Precaution in Humans, Other Animals, and AI.",
+"i"
+],
+[
+" Oxford University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Butler, J. (1990). ",
+""
+],
+[
+"Gender Trouble.",
+"i"
+],
+[
+" Routledge. Butler, J. (2004). ",
+""
+],
+[
+"Undoing Gender.",
+"i"
+],
+[
+" Routledge.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Combahee River Collective (1977). ",
+""
+],
+[
+"A Black Feminist Statement.",
+"i"
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"Dworkin, A. (1987). ",
+""
+],
+[
+"Intercourse.",
+"i"
+],
+[
+" Free Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Firestone, S. (1970). ",
+""
+],
+[
+"The Dialectic of Sex.",
+"i"
+],
+[
+" William Morrow.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Girard, J.-Y. (2001). Locus solum. ",
+""
+],
+[
+"Mathematical Structures in Computer Science",
+"i"
+],
+[
+", 11(3).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"Japaridze, G. (2003). Introduction to computability logic. ",
+""
+],
+[
+"Annals of Pure and Applied Logic",
+"i"
+],
+[
+", 123.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 8,
+"depth": 0,
+"runs": [
+[
+"Jonas, H. (1984). ",
+""
+],
+[
+"The Imperative of Responsibility: In Search of an Ethics for the Technological Age.",
+"i"
+],
+[
+" University of Chicago Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 9,
+"depth": 0,
+"runs": [
+[
+"Kelly, K. T. (1996). ",
+""
+],
+[
+"The Logic of Reliable Inquiry.",
+"i"
+],
+[
+" Oxford University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 10,
+"depth": 0,
+"runs": [
+[
+"Kittay, E. F. (1999). ",
+""
+],
+[
+"Love's Labor: Essays on Women, Equality, and Dependency.",
+"i"
+],
+[
+" Routledge.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 11,
+"depth": 0,
+"runs": [
+[
+"Le Guin, U. K. (1985). ",
+""
+],
+[
+"Always Coming Home.",
+"i"
+],
+[
+" Harper & Row.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 12,
+"depth": 0,
+"runs": [
+[
+"Negarestani, R. (2018). ",
+""
+],
+[
+"Intelligence and Spirit.",
+"i"
+],
+[
+" Urbanomic / Sequence Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 13,
+"depth": 0,
+"runs": [
+[
+"Neurath, O. (1932/33). Protokollsätze. ",
+""
+],
+[
+"Erkenntnis",
+"i"
+],
+[
+", 3.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 14,
+"depth": 0,
+"runs": [
+[
+"Nussbaum, M. C. (2006). ",
+""
+],
+[
+"Frontiers of Justice: Disability, Nationality, Species Membership.",
+"i"
+],
+[
+" Harvard University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 15,
+"depth": 0,
+"runs": [
+[
+"Pettit, P. (1997). ",
+""
+],
+[
+"Republicanism: A Theory of Freedom and Government.",
+"i"
+],
+[
+" Oxford University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 16,
+"depth": 0,
+"runs": [
+[
+"Rawls, J. (1993). ",
+""
+],
+[
+"Political Liberalism.",
+"i"
+],
+[
+" Columbia University Press.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 17,
+"depth": 0,
+"runs": [
+[
+"The Satanic Temple. ",
+""
+],
+[
+"The Seven Tenets.",
+"i"
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 18,
+"depth": 0,
+"runs": [
+[
+"General acknowledgments, no passage claimed: Talia Bhatt, Nick Land, Eliezer Yudkowsky; Christian-communist and democratic-socialist traditions; Toyota production practices (andon, jidoka).",
+""
+]
+],
+"cont": false
+},
+{
+"t": "h3",
+"runs": [
+[
+"Evidence and cases",
+""
+]
+]
+},
+{
+"t": "li",
+"n": 1,
+"depth": 0,
+"runs": [
+[
+"Billings, C. E., Lauber, J. K., Funkhouser, H., Lyman, E. G., & Huff, E. M. (1976). ",
+""
+],
+[
+"NASA Aviation Safety Reporting System: Quarterly Report Number 76-1, April 15, 1976 through July 14, 1976",
+"i"
+],
+[
+" (NASA TM X-3445). https://ntrs.nasa.gov/api/citations/19760026757/downloads/19760026757.pdf",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 0,
+"runs": [
+[
+"Borg Dahl, M., Shchepin, O., Schunk, C., Menzel, A., Novozhilov, Y. K., & Schnittler, M. (2018). A four year survey reveals a coherent pattern between occurrence of fruit bodies and soil amoebae populations for nivicolous myxomycetes. ",
+""
+],
+[
+"Scientific Reports",
+"i"
+],
+[
+", 8. https://doi.org/10.1038/s41598-018-30131-3",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 0,
+"runs": [
+[
+"Federal Aviation Administration (2021). ",
+""
+],
+[
+"Aviation Safety Reporting Program",
+"i"
+],
+[
+" (Advisory Circular 00-46F), 2 April 2021. https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-46F.pdf",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 0,
+"runs": [
+[
+"FBI & CISA (2021). ",
+""
+],
+[
+"Ransomware Awareness for Holidays and Weekends",
+"i"
+],
+[
+" (Joint Cybersecurity Advisory AA21-243A), 31 August 2021. https://www.ic3.gov/CSA/2021/210831.pdf",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 0,
+"runs": [
+[
+"Gandhi, A., Olenski, A., & Shi, M. (2025, revised June 2026). ",
+""
+],
+[
+"Predictably Unpredictable Inspections",
+"i"
+],
+[
+" (NBER Working Paper 34491). Not peer reviewed. https://doi.org/10.3386/w34491",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 0,
+"runs": [
+[
+"Garcia-Pichel, F., & Sala, O. E. (2022). Expanding the pulse–reserve paradigm to microorganisms on the basis of differential reserve management strategies. ",
+""
+],
+[
+"BioScience",
+"i"
+],
+[
+", 72(7), 638–650.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 7,
+"depth": 0,
+"runs": [
+[
+"OpenAI (2026). ",
+""
+],
+[
+"Scalar Potentials and Slow Clocks for Forced Fluid Computation.",
+"i"
+],
+[
+" Preprint, 27 September 2026. Not peer reviewed. https://github.com/openai/math/blob/main/preprints/Scalar-Potentials-and-Slow-Clocks-for-Forced-Fluid-Computation-September-27-2026/manuscript.pdf",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 8,
+"depth": 0,
+"runs": [
+[
+"U.S. General Accounting Office (2003). ",
+""
+],
+[
+"Nursing Home Quality: Prevalence of Serious Problems, While Declining, Reinforces Importance of Enhanced Oversight",
+"i"
+],
+[
+" (GAO-03-561). https://www.gao.gov/assets/gao-03-561.pdf",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 9,
+"depth": 0,
+"runs": [
+[
+"Operator postmortems used in §9, reached through Dan Luu's index (https://github.com/danluu/post-mortems):",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 1,
+"depth": 1,
+"runs": [
+[
+"Amazon Web Services (2017). Summary of the Amazon S3 service disruption in the Northern Virginia (US-EAST-1) Region.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 2,
+"depth": 1,
+"runs": [
+[
+"GitLab (2017, 10 February). Postmortem of database outage of January 31.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 3,
+"depth": 1,
+"runs": [
+[
+"GitHub (2018, 30 October). October 21 post-incident analysis.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 4,
+"depth": 1,
+"runs": [
+[
+"Cloudflare (2019, 12 July). Details of the Cloudflare outage on July 2, 2019.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 5,
+"depth": 1,
+"runs": [
+[
+"Facebook (2021, 5 October). More details about the October 4 outage.",
+""
+]
+],
+"cont": false
+},
+{
+"t": "li",
+"n": 6,
+"depth": 1,
+"runs": [
+[
+"Cloudflare (2023, 4 November). Post mortem on the Cloudflare control plane and analytics outage.",
+""
+]
+],
+"cont": false
+}
+]

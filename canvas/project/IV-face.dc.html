@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tabula IV — Of the Second Copy</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zeyada&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IM+Fell+English:ital@0;1&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#a3271b}a:hover{color:#1c1813}
+</style>
+</helmet>
+<div style="position: relative; width: 1000px; height: 1600px; overflow: hidden; background: #ebe1c8; color: #1c1813; font-family: 'EB Garamond', serif">
+<img src="/_blob/42923db40698df6ba908f470763f276c" alt="A mounted record of two long cornmeal deposits on a dark ground, joined by a dotted copying path with an arrow. Both deposits lack the same segment; a paper patch covers the first gap, the second is exposed, and red chalk brackets mark both. A sharp test stroke sits at the lower edge. Below the mount, a caption strip in the transcription hand." style="position: absolute; left: 0px; top: 0px; width: 1000px; height: 1600px">
+<div style="position: absolute; left: 56px; top: 28px; width: 420px; margin: 0; font-family: 'EB Garamond', serif; font-size: 14px; line-height: 18px; color: #1c1813"><p style="margin: 0"><span style="font-variant: small-caps; letter-spacing: 0.04em">Clavicula Matricis</span></p></div>
+<div style="position: absolute; left: 524px; top: 28px; width: 420px; margin: 0; font-family: 'EB Garamond', serif; font-size: 14px; line-height: 18px; color: #a3271b; text-align: right"><p style="margin: 0"><span style="font-variant: small-caps; letter-spacing: 0.04em">Tabula IV · a mounted record</span></p></div>
+<div style="position: absolute; left: 60px; top: 110px; width: 880px; margin: 0; font-family: 'EB Garamond', serif; font-size: 42px; line-height: 48px; color: #1c1813; text-align: center"><p style="margin: 0">Of the Second Copy</p></div>
+<div style="position: absolute; left: 200px; top: 196px; width: 600px; margin: 0; font-family: 'IM Fell English', serif; font-size: 24px; line-height: 33.1px; color: #1c1813; text-align: center; letter-spacing: 0.01em"><p style="margin: 0">Two copies. One omission.</p></div>
+<div style="position: absolute; left: 844px; top: 1560px; width: 100px; margin: 0; font-family: 'EB Garamond', serif; font-size: 13px; line-height: 18px; color: #6d5f4b; text-align: right"><p style="margin: 0"><span style="font-variant: small-caps; letter-spacing: 0.04em">iv</span></p></div>
+<sc-if value="{{ closed }}" hint-placeholder-val="{{ true }}"><button aria-label="Lift the paper patch" onClick="{{ toggle }}" style="position: absolute; left: 542px; top: 488px; width: 110px; height: 104px; padding: 0; border: 0; margin: 0; background: #e7dec8; opacity: 0.96; clip-path: polygon(3% 6%, 22% 1%, 47% 4%, 71% 0%, 97% 5%, 100% 31%, 96% 58%, 99% 86%, 92% 100%, 63% 96%, 38% 100%, 9% 97%, 0% 71%, 4% 42%); cursor: pointer"></button></sc-if>
+<sc-if value="{{ lifted }}" hint-placeholder-val="{{ false }}"><button aria-label="Lay the patch back" onClick="{{ toggle }}" style="position: absolute; left: 516px; top: 376px; width: 140px; height: 104px; padding: 10px 10px; box-sizing: border-box; border: 0; margin: 0; background: #efe7d2; clip-path: polygon(3% 6%, 22% 1%, 47% 4%, 71% 0%, 97% 5%, 100% 31%, 96% 58%, 99% 86%, 92% 100%, 63% 96%, 38% 100%, 9% 97%, 0% 71%, 4% 42%); transform: rotate(-7deg); cursor: pointer; font-family: 'Zeyada', cursive; font-size: 17px; line-height: 18px; color: #4a463f; text-align: left">I copied the place where the word had been.</button></sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1000,"height":1600}}'>
+class Component extends DCLogic {
+renderVals() {
+const lifted = !!(this.state && this.state.lifted);
+return { lifted: lifted, closed: !lifted, toggle: () => this.setState({ lifted: !lifted }) };
+}
+}
+</script>
+</body>
+</html>
