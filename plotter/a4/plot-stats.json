@@ -1,0 +1,41 @@
+{
+  "source": "canvas/assets/xi_face.svg",
+  "source_sha256": "e82c26008817c6ca2b5a6de48bdb920128ba146cf25e2e45232958fec795ccb1",
+  "page_mm": [
+    210,
+    297
+  ],
+  "source_scale_mm_per_unit": 0.170625,
+  "artwork_bounds_mm": [
+    27.024,
+    16.266,
+    186.781,
+    280.734
+  ],
+  "pen_width_mm": 0.28,
+  "solid_hatch_spacing_mm": 0.32,
+  "curve_tolerance_mm": 0.015,
+  "simplification_tolerance_mm": 0.015,
+  "discarded_paper_or_ghost_style_groups": 6,
+  "black": {
+    "strokes": 1949,
+    "pen_down_metres": 7.494,
+    "between_strokes_travel_metres": 2.979
+  },
+  "red": {
+    "strokes": 199,
+    "pen_down_metres": 0.488,
+    "between_strokes_travel_metres": 0.546
+  },
+  "registration_each_pass": {
+    "strokes": 8,
+    "pen_down_metres": 0.032,
+    "between_strokes_travel_metres": 0.736
+  },
+  "notes": [
+    "Geometric statistics, not a runtime estimate.",
+    "Each listed stroke normally needs a pen lift.",
+    "No hardware test has been performed.",
+    "Lettering reset as monoline capitals, except the outlined original title."
+  ]
+}

@@ -15,6 +15,7 @@ It is an art object. The text is real and the diagrams are meant to work as proc
 - `generator/src/`: the Revision 5 source text as JSON blocks.
 - `generator/out/`: generated SVGs and text-box JSON.
 - `fonts/`: the typefaces (OFL / Apache). `fonts/static/` holds a weight-400 instance of EB Garamond so PDFs embed TrueType, not Type 3.
+- [`plotter/`](plotter/README.md): a two-pen, stroke-only edition of *Of the Closed Neck*, with A4 black/red SVG passes, a registration/test sheet and a portable exporter. Digitally checked; awaiting an iDraw trial.
 
 ## Generator map
 
