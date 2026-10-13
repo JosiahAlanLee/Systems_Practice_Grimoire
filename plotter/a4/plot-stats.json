@@ -8,9 +8,9 @@
   "source_scale_mm_per_unit": 0.170625,
   "artwork_bounds_mm": [
     27.024,
-    16.266,
+    16.777,
     186.781,
-    280.734
+    281.502
   ],
   "pen_width_mm": 0.28,
   "solid_hatch_spacing_mm": 0.32,
@@ -18,14 +18,14 @@
   "simplification_tolerance_mm": 0.015,
   "discarded_paper_or_ghost_style_groups": 6,
   "black": {
-    "strokes": 1949,
-    "pen_down_metres": 7.494,
-    "between_strokes_travel_metres": 2.979
+    "strokes": 2350,
+    "pen_down_metres": 7.807,
+    "between_strokes_travel_metres": 3.141
   },
   "red": {
-    "strokes": 199,
-    "pen_down_metres": 0.488,
-    "between_strokes_travel_metres": 0.546
+    "strokes": 220,
+    "pen_down_metres": 0.507,
+    "between_strokes_travel_metres": 0.527
   },
   "registration_each_pass": {
     "strokes": 8,
@@ -36,6 +36,6 @@
     "Geometric statistics, not a runtime estimate.",
     "Each listed stroke normally needs a pen lift.",
     "No hardware test has been performed.",
-    "Lettering reset as monoline capitals, except the outlined original title."
+    "Lettering in three hands: Hershey Times small capitals, the plotter monoline stamp, Hershey Script for M.; title hatched solid."
   ]
 }

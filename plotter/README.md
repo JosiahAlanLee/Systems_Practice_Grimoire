@@ -49,8 +49,8 @@ settings; an SVG stroke width does not set them.
    remains in the red layer. When using the combined SVG, draw each colour layer
    once; do not also plot the corresponding separate file.
 
-The main black pass contains **1,949 strokes / 7.494 m** of pen-down motion; red
-contains **199 strokes / 0.488 m**. Each separate pass adds eight optional
+The main black pass contains **2,350 strokes / 7.807 m** of pen-down motion; red
+contains **220 strokes / 0.507 m**. Each separate pass adds eight optional
 registration strokes. Pen lifts and acceleration can dominate runtime, so these
 figures are not time estimates.
 
@@ -62,9 +62,11 @@ figures are not time estimates.
   The physical paper supplies the ground.
 - Replaced dark filled geometry with contour and hatch strokes. The light stars
   in the dark corner tablets are retained as gaps in the hatching.
-- Reset small HTML lettering as an original monoline capital alphabet. The large
-  title preserves the repository's IM FELL English face as explicit outlines.
-  Its outlines are intentional; the title will look different from a filled print.
+- Reset the lettering in the plate's three hands, all as single strokes: engraved
+  small capitals and roman in Hershey Times (running heads, inset, trial numerals,
+  folio); the plotter's own monoline capitals for its PASSAGE RESTORED stamp; and
+  Hershey Script for M.'s rust note. The large title keeps the repository's IM FELL
+  English outlines, hatched solid at the same spacing as other filled areas.
 - Mapped the original sepia linework to the black pen. Red remains a separate pass.
 - Flattened curves to polylines (0.015 mm control-polygon tolerance), simplified
   sub-pen jitter at 0.015 mm, removed exact duplicate strokes, and ordered paths
@@ -79,7 +81,7 @@ clipping paths, opacity effects, or transforms** for a plotter to interpret.
 
 ## Rebuild or change the sheet size
 
-Requires Python 3.10+ and the two packages in `requirements.txt`. The exporter
+Requires Python 3.10+ and the packages in `requirements.txt` (fontTools, Shapely, Hershey-Fonts). The exporter
 reads `canvas/assets/xi_face.svg` and the title font already in this repository.
 It does not run the original generators or depend on their absolute workspace
 paths. Source provenance is recorded as SHA-256 in `plot-stats.json`.
@@ -106,7 +108,7 @@ The plate is proportionally fitted within the requested margins (12 mm default).
 It is not stretched. Dimensions should describe the sheet/coordinate area you
 actually use, not a guessed machine limit. Scaling alters the minimum details;
 a smaller format needs its own pen test. The committed A4 lettering is about
-2.05 mm high at its smallest.
+1.6 mm high at its smallest (trial numerals and folio).
 
 For a different pen, adjust both the preview stroke and the new solid-area
 hatching. Existing engraved hatch spacing scales with the artwork:

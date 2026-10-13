@@ -20,6 +20,11 @@ from fontTools.ttLib import TTFont
 from shapely.geometry import LineString, Polygon
 from shapely.ops import unary_union
 
+try:
+    from HersheyFonts import HersheyFonts
+except ImportError as exc:  # pragma: no cover
+    raise SystemExit("Install the plotter requirements: python -m pip install -r plotter/requirements.txt") from exc
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "canvas/assets/xi_face.svg"
 TITLE_FONT = ROOT / "fonts/IMFeENrm28P.ttf"
@@ -73,6 +78,76 @@ def monoline(text: str, x: float, y: float, height: float,
                                 for p in stroke.split(",")])
         x += height
     return strokes
+
+
+_HERSHEY = {}
+
+
+def hershey(text: str, x: float, y: float, cap: float, face: str = "timesr",
+            align: str = "left") -> list[Stroke]:
+    """Single-stroke Hershey lettering in mm. (x, y) is the top of the capitals."""
+    if face not in _HERSHEY:
+        font = HersheyFonts()
+        font.load_default_font(face)
+        font.normalize_rendering(100)
+        hs = [p for seg in font.lines_for_text("H") for p in seg]
+        _HERSHEY[face] = (font, min(q[1] for q in hs), max(q[1] for q in hs))
+    font, base, top = _HERSHEY[face]
+    k = cap / (top - base)
+    strokes: list[Stroke] = []
+    for a, b in font.lines_for_text(text):
+        a = (a[0] * k, (top - a[1]) * k)
+        b = (b[0] * k, (top - b[1]) * k)
+        if strokes and math.dist(strokes[-1][-1], a) < 1e-6:
+            strokes[-1].append(b)
+        else:
+            strokes.append([a, b])
+    if not strokes:
+        return []
+    x0 = min(p[0] for s_ in strokes for p in s_)
+    x1 = max(p[0] for s_ in strokes for p in s_)
+    shift = x - x0 - ((x1 - x0) / 2 if align == "center" else (x1 - x0) if align == "right" else 0)
+    return [[(px + shift, py + y) for px, py in s_] for s_ in strokes]
+
+
+def small_caps(text: str, x: float, y: float, cap: float, align: str = "left") -> list[Stroke]:
+    """Engraved small capitals: initials at full height, the rest at 0.74, one baseline.
+    A word given wholly in capitals (a numeral such as XI) stays at full height throughout."""
+    pieces, cx = [], 0.0
+    for word in text.split():
+        for i, ch in enumerate(word):
+            h = cap if (word.isupper() or (i == 0 and ch.isupper())) else cap * .74
+            g = hershey(ch.upper(), cx, cap - h, h)
+            if g:
+                pieces.append(g)
+                cx = max(p[0] for s_ in g for p in s_) + cap * .16
+        cx += cap * .42
+    strokes = [s_ for g in pieces for s_ in g]
+    if not strokes:
+        return []
+    width = max(p[0] for s_ in strokes for p in s_)
+    shift = x - (width / 2 if align == "center" else width if align == "right" else 0)
+    return [[(px + shift, py + y) for px, py in s_] for s_ in strokes]
+
+
+def wrap_hershey(text: str, x: float, y: float, cap: float, face: str, width: float,
+                 leading: float) -> list[Stroke]:
+    """Greedy word wrap for a hand-lettered note."""
+    lines, cur = [], ""
+    for word in text.split():
+        trial = (cur + " " + word).strip()
+        g = hershey(trial, 0, 0, cap, face)
+        w = max(p[0] for s_ in g for p in s_) - min(p[0] for s_ in g for p in s_)
+        if cur and w > width:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = trial
+    lines.append(cur)
+    out = []
+    for i, line in enumerate(lines):
+        out += hershey(line, x, y + i * leading, cap, face)
+    return out
 
 
 def distance_to_segment(p: Point, a: Point, b: Point) -> float:
@@ -142,8 +217,8 @@ class Layout:
         return ((self.width-1000*s)/2+p[0]*s, (self.height-1600*s)/2+p[1]*s)
 
 
-def outline_title(layout: Layout) -> list[Stroke]:
-    """The large original serif title is deliberately outlined, not hatched."""
+def outline_title(layout: Layout, spacing: float | None = None) -> list[Stroke]:
+    """The large serif title as contours; with `spacing`, hatched solid so it reads as type."""
     with TTFont(TITLE_FONT) as font:
         glyphs, cmap = font.getGlyphSet(), font.getBestCmap()
         scale = 42 * layout.scale / font["head"].unitsPerEm
@@ -156,7 +231,15 @@ def outline_title(layout: Layout) -> list[Stroke]:
             pen = FlattenPen(glyphs, tolerance=0.015/scale)
             glyph.draw(pen)
             pen._endPath()
-            strokes.extend([[(x+px*scale, baseline-py*scale) for px,py in s] for s in pen.strokes])
+            contours = [[(x+px*scale, baseline-py*scale) for px,py in s] for s in pen.strokes]
+            if spacing is None:
+                strokes.extend(contours)
+            else:
+                shape = Polygon()
+                for c in contours:          # even-odd: counters cut themselves out
+                    if len(c) >= 4:
+                        shape = shape.symmetric_difference(Polygon(c).buffer(0))
+                strokes.extend(hatch(shape, spacing))
             x += glyph.width*scale
     return strokes
 
@@ -227,23 +310,29 @@ def geometry(layout: Layout, spacing: float, pen_width: float):
     return dark_strokes, red_strokes, dropped
 
 
-def lettering(layout):
-    black = outline_title(layout)
+def lettering(layout, spacing):
+    """Three hands, as on the plate: engraved small capitals and roman (Hershey Times),
+    the plotter's own monoline capitals for its stamp, and M.'s script note (Hershey Script)."""
+    black = outline_title(layout, spacing)
     red = []
-    def label(target, text, x, y, height, align="left"):
-        xx, yy = layout.point((x,y))
-        target.extend(monoline(text, xx, yy, height*layout.scale, align))
-    # Bigger monoline labels replace the original HTML fonts at practical pen sizes.
-    label(black, "CLAVICULA MATRICIS", 56, 25, 15)
-    label(red, "TABULA XI", 944, 25, 15, "right")
-    label(black, "LEAVE THE NECK.", 102, 708, 12.5)
-    label(red, "PASSAGE", 788, 697, 12.5, "right")
-    label(red, "RESTORED.", 807, 697, 12.5)
-    for i, line in enumerate(["ONLY TO", "THE LOWER", "GATE."]):
-        label(red, line, 810, 735+i*23, 12)
-    for text,x in [("I",110),("II",395),("III",680)]:
-        label(black, text, x, 1260, 14)
-    label(black, "XI", 500, 1560, 15, "center")
+    s = layout.scale
+
+    def at(x, y):
+        return layout.point((x, y))
+    # engraved: running heads, inset, trial numerals, folio
+    black += small_caps("Clavicula Matricis", *at(56, 28), 13 * s)
+    red += small_caps("Tabula XI", *at(944, 28), 13 * s, "right")
+    black += hershey("Leave the neck.", *at(104, 708), 15 * s, "timesr")
+    for text, x in [("I", 112), ("II", 397), ("III", 682)]:
+        black += small_caps(text, *at(x, 1262), 9.5 * s)
+    black += small_caps("XI", *at(500, 1570), 9.5 * s, "center")
+    # the plotter's stamp keeps the machine capitals
+    xx, yy = at(788, 699)
+    red += monoline("PASSAGE", xx, yy, 11 * s, "right")
+    xx, yy = at(807, 699)
+    red += monoline("RESTORED.", xx, yy, 11 * s)
+    # M.'s note in script
+    red += wrap_hershey("Only to the lower gate.", *at(806, 733), 15 * s, "scripts", 112 * s, 26 * s)
     return black, red
 
 
@@ -321,7 +410,7 @@ def test_sheet(layout):
             cross = [[(x-3,y),(x+3,y)],[(x,y-3),(x,y+3)]]
             black += cross; red += cross
     black += monoline("LEAVE THE NECK.",cx-34,cy-17,2.2)
-    red += monoline("ONLY TO THE LOWER GATE.",cx-34,cy-11,2.1)
+    red += hershey("Only to the lower gate.",cx-34,cy-12,2.6,"scripts")
     for i,gap in enumerate((.35,.5,.75)):
         x = cx-32+i*23
         black += [[(x,cy+j*gap),(x+16,cy+j*gap)] for j in range(8)]
@@ -364,7 +453,7 @@ def build(args):
         raise ValueError("Use a 0.15-0.5 mm pen; hatch spacing must be at least the pen width.")
     layout = Layout(width,height,args.margin_mm)
     black,red,dropped = geometry(layout,args.hatch_mm,args.pen_mm)
-    tb,tr = lettering(layout); black+=tb; red+=tr
+    tb,tr = lettering(layout, args.hatch_mm); black+=tb; red+=tr
     black,red = optimize(black),optimize(red)
     art_bounds = unary_union([LineString(s) for s in black+red]).bounds
     reg = registration(layout)
@@ -384,7 +473,7 @@ def build(args):
             "discarded_paper_or_ghost_style_groups":dropped,
             "black":stats(black),"red":stats(red),"registration_each_pass":stats(reg),
             "notes":["Geometric statistics, not a runtime estimate.","Each listed stroke normally needs a pen lift.",
-                     "No hardware test has been performed.","Lettering reset as monoline capitals, except the outlined original title."]}
+                     "No hardware test has been performed.","Lettering in three hands: Hershey Times small capitals, the plotter monoline stamp, Hershey Script for M.; title hatched solid."]}
     (out/"plot-stats.json").write_text(json.dumps(info,indent=2)+"\n")
     if args.preview:
         import cairosvg
